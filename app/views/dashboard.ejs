@@ -1,0 +1,90 @@
+
+            <%- include('./partials/header'); %>
+
+<aside class="right-side">
+    <section class="content-header dashboard">
+        <h1>
+            Dashboard
+            <small>Control panel</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li>
+                <a href="#">
+                    <i class="fa fa-dashboard"></i>
+                    Home
+                </a>
+            </li>
+            <li class="active">
+                Dashboard
+            </li>
+        </ol>
+    </section>
+    <section class="content">
+        <div class="row">
+            <div class="col-lg-4 col-xs-6">
+                <div class="small-box bg-green">
+                    <div class="inner">
+                        <h3>140</h3>
+                        <p>Total Contact</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-bullhorn bullhorn"></i>
+                    </div>
+                    <a href="#" class="small-box-footer">
+                        View Enquiries
+                        <i class="fa fa-arrow-circle-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xs-6">
+                <div class="small-box bg-red">
+                    <div class="inner">
+                        <h3>15</h3>
+                        <p>Total Subscribers</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-bullhorn bullhorn"></i>
+                    </div>
+                    <a href="#" class="small-box-footer">
+                        View Subscribers
+                        <i class="fa fa-arrow-circle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 connectedSortable"></div>
+
+        </div>
+    </section>
+</aside>
+<script>
+    alert("hello")
+    $(document).ready(function(){
+
+$("#sidebar-toggle").click(function() {
+$("#sidebar-open").toggleClass("hideDiv");
+
+    })
+})
+</script>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+</body>
+</html>
